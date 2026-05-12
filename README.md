@@ -41,14 +41,15 @@ You can pass the following flags into the action:
 
 | Flag | Description |
 | ---- | ----------- |
-| status | The current status of the job |
-| message | Message text |
-| title | Message title |
-| url | Supplementary URL to show with your message |
-| url_title | title for your supplementary URL |
-| device | Device name to send the message directly to |
-| priority | Notification priority (low-to-high: -2 to 1) |
-| sound | The name of a supported sound (https://pushover.net/api#sounds; custom sounds are supported) |
+| **status** | the current status of the job |
+| **message** | your message |
+| **device** | the name of one of your devices to send just to that device instead of all devices (multiple devices may be separated by a comma) |
+| **priority** | a value of -2, -1, 0 (default), 1, or 2 (https://pushover.net/api#priority) |
+| **sound** | the name of a supported sound to override your default sound choice (https://pushover.net/api#sounds) |
+| **title** | your message's title, otherwise your app's name is used |
+| **ttl** | a number of seconds that the message will live, before being deleted automatically |
+| **url** | a supplementary URL to show with your message |
+| **url_title** | a title for the URL specified as the url parameter, otherwise just the URL is shown |
 
 Example: 
 ```
