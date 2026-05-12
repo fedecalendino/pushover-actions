@@ -41,7 +41,7 @@ def main():
     )
     parser.add_argument(
         "--ttl",
-        type=int,
+        type=str,
         help="a number of seconds that the message will live, before being deleted automatically",
     )
     parser.add_argument(
